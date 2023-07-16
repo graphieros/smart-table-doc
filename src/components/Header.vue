@@ -22,7 +22,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <header class="w-full sticky top-0 py-6 bg-slate-800 text-slate-200 flex place-content-center font-satoshi">
+    <header class="w-full sticky top-0 py-6 bg-slate-800 text-slate-200 flex place-content-center font-satoshi" style="z-index:1000000000">
         <div class="w-5/6 flex place-content-center place-items-center justify-between">
             <div class="flex flex-col">
                 <span class="font-bold">wc-smart-table</span>
