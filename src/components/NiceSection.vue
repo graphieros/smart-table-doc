@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div :class="`rounded-lg border ${border} p-6 my-12 bg-slate-600`">
+    <div :class="`rounded-lg border ${border} p-6 my-12 bg-slate-600 overflow-y-auto`">
         <slot/>
     </div>
 </template>

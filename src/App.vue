@@ -7,141 +7,141 @@ import NiceSection from "./components/NiceSection.vue";
 import SectionTitle from "./components/SectionTitle.vue";
 
 const head = ref([
-  {
-              name: "touchpoint",
-              type: "text",
-              average: false,
-              decimals: undefined,
-              sum: false,
-              isSort: true,
-              isSearch: true,
-              isMultiselect: true,
-              isPercentage: false,
-              percentageTo: undefined,
-              suffix: "",
-              prefix: "",
-              rangeFilter: false,
-          },
-          {
-              name: "category",
-              type: "text",
-              average: false,
-              decimals: undefined,
-              sum: false,
-              isSort: false,
-              isSearch: false,
-              isMultiselect: true,
-              isPercentage: false,
-              percentageTo: undefined,
-              suffix:"",
-              prefix: "",
-              rangeFilter: false,
-          },
-          {
-              name: "date",
-              type: "date",
-              average: false,
-              decimals: undefined,
-              sum: false,
-              isSort: true,
-              isSearch: false,
-              isMultiselect: false,
-              isPercentage: false,
-              percentageTo: undefined,
-              suffix:"",
-              prefix:"",
-              rangeFilter: false,
-          },
-          {
-              name: "base",
-              type: "numeric",
-              average: true,
-              decimals: 0,
-              sum: true,
-              isSort: true,
-              isSearch: false,
-              isMultiselect: false,
-              isPercentage: false,
-              percentageTo: undefined,
-              suffix:"",
-              prefix:"",
-              rangeFilter: false,
-          },
-          {
-              name: "rating",
-              type: "numeric",
-              decimals: 1,
-              average: true,
-              sum: false,
-              isSort: true,
-              isSearch: false,
-              isMultiselect: false,
-              isPercentage: false,
-              percentageTo: undefined,
-              suffix:"",
-              prefix:"",
-              rangeFilter: true,
-          },
-          {
-              name: "spend",
-              type: "numeric",
-              decimals: 1,
-              average: true,
-              sum: true,
-              isSort: true,
-              isSearch: false,
-              isMultiselect: false,
-              isPercentage: false,
-              percentageTo: undefined,
-              suffix:"€",
-              prefix:"",
-              rangeFilter: true,
-          },
-          {
-              name: "percentage",
-              type: "numeric",
-              decimals: 1,
-              average: false,
-              sum: false,
-              isSort: true,
-              isSearch: false,
-              isMultiselect: false,
-              isPercentage: true, // requires an empty slot in the body td arrays!
-              percentageTo: "base",
-              suffix:"",
-              prefix:"",
-              rangeFilter: false,
-          },
-          {
-              name: "happy",
-              type: "numeric",
-              decimals: 0,
-              average: true,
-              sum: true,
-              isSort: true,
-              isSearch: false,
-              isMultiselect: false,
-              isPercentage: false,
-              percentageTo: "base",
-              suffix:"",
-              prefix:"",
-              rangeFilter: false,
-          },
-          {
-              name: "sad",
-              type: "numeric",
-              decimals: 0,
-              average: true,
-              sum: true,
-              isSort: true,
-              isSearch: false,
-              isMultiselect: false,
-              isPercentage: false,
-              percentageTo: "base",
-              suffix:"",
-              prefix:"",
-              rangeFilter: false
-          },
+    {
+        name: "touchpoint",
+        type: "text",
+        average: false,
+        decimals: undefined,
+        sum: false,
+        isSort: true,
+        isSearch: true,
+        isMultiselect: true,
+        isPercentage: false,
+        percentageTo: undefined,
+        suffix: "",
+        prefix: "",
+        rangeFilter: false,
+    },
+    {
+        name: "category",
+        type: "text",
+        average: false,
+        decimals: undefined,
+        sum: false,
+        isSort: false,
+        isSearch: false,
+        isMultiselect: true,
+        isPercentage: false,
+        percentageTo: undefined,
+        suffix:"",
+        prefix: "",
+        rangeFilter: false,
+    },
+    {
+        name: "date",
+        type: "date",
+        average: false,
+        decimals: undefined,
+        sum: false,
+        isSort: true,
+        isSearch: false,
+        isMultiselect: false,
+        isPercentage: false,
+        percentageTo: undefined,
+        suffix:"",
+        prefix:"",
+        rangeFilter: false,
+    },
+    {
+        name: "base",
+        type: "numeric",
+        average: true,
+        decimals: 0,
+        sum: true,
+        isSort: true,
+        isSearch: false,
+        isMultiselect: false,
+        isPercentage: false,
+        percentageTo: undefined,
+        suffix:"",
+        prefix:"",
+        rangeFilter: false,
+    },
+    {
+        name: "rating",
+        type: "numeric",
+        decimals: 1,
+        average: true,
+        sum: false,
+        isSort: true,
+        isSearch: false,
+        isMultiselect: false,
+        isPercentage: false,
+        percentageTo: undefined,
+        suffix:"",
+        prefix:"",
+        rangeFilter: true,
+    },
+    {
+        name: "spend",
+        type: "numeric",
+        decimals: 1,
+        average: true,
+        sum: true,
+        isSort: true,
+        isSearch: false,
+        isMultiselect: false,
+        isPercentage: false,
+        percentageTo: undefined,
+        suffix:"€",
+        prefix:"",
+        rangeFilter: true,
+    },
+    {
+        name: "percentage",
+        type: "numeric",
+        decimals: 1,
+        average: false,
+        sum: false,
+        isSort: true,
+        isSearch: false,
+        isMultiselect: false,
+        isPercentage: true, // requires an empty slot in the body td arrays!
+        percentageTo: "base",
+        suffix:"",
+        prefix:"",
+        rangeFilter: false,
+    },
+    {
+        name: "happy",
+        type: "numeric",
+        decimals: 0,
+        average: true,
+        sum: true,
+        isSort: true,
+        isSearch: false,
+        isMultiselect: false,
+        isPercentage: false,
+        percentageTo: "base",
+        suffix:"",
+        prefix:"",
+        rangeFilter: false,
+    },
+    {
+        name: "sad",
+        type: "numeric",
+        decimals: 0,
+        average: true,
+        sum: true,
+        isSort: true,
+        isSearch: false,
+        isMultiselect: false,
+        isPercentage: false,
+        percentageTo: "base",
+        suffix:"",
+        prefix:"",
+        rangeFilter: false
+    },
 ]);
 
 const body = computed(() => {
@@ -424,6 +424,98 @@ const body = computed(() => {
       <article class="py-6">
         <h3 class="mb-3 text-[24px]"><code>body</code> : the actual data of your table</h3>
           <div class="flex flex-row rounded-md place-items-center place-content-center gap-6 px-6 py-3 bg-slate-800 text-red-200 mb-3"><AlertTriangleIcon/> Requires data to be passed in JSON format</div>
+
+          <p>
+            Provide an array of objects (in JSON format), one object for each row of your column.
+            Feed the td attribute with all the row data, in the same order as your columns. <br><br>
+            Here is an example with a table containing 3 columns, and 5 rows.<br>
+          </p>
+
+          <NiceSection>
+    <pre>
+      [
+        {
+          td: ["Competitive prices", "shop", 3.2], <span class="text-green-200">// follow the same order as your columns</span>
+        },
+        {
+          td: ["Atmosphere", "shop", 4.1],
+        },
+        {
+          td: ["Competitive prices", "shop", 4.8],
+        },
+        {
+          td: ["Amability", "check-out", 3.9],
+        },
+        {
+          td: ["Amability", "shop", 4.6],
+        },
+      ]
+    </pre>
+          </NiceSection>
+
+          <p><AlertTriangleIcon/> 
+            If a column has <code class="text-teal-200">isPercentage: true</code>, you must provide an empty array inside the td array, at the same index as the concerned column. Let's extend the previous example with an additional column that will calculate the percentages of the third column:      
+          </p>
+
+          <NiceSection>
+    <pre>
+      [
+        {
+          td: ["Competitive prices", "shop", 3.2, <span class="text-teal-200">""</span>], <span class="text-green-200">// add an empty string at index 3, if header[3].isPercentage === true</span>
+        },
+        {
+          td: ["Atmosphere", "shop", 4.1, <span class="text-teal-200">""</span>],
+        },
+        {
+          td: ["Competitive prices", "shop", 4.8, <span class="text-teal-200">""</span>],
+        },
+        {
+          td: ["Amability", "check-out", 3.9, <span class="text-teal-200">""</span>],
+        },
+        {
+          td: ["Amability", "shop", 4.6, <span class="text-teal-200">""</span>],
+        },
+      ]
+    </pre>
+          </NiceSection>
+      </article>
+
+      <article class="py-6">
+        Other optional props:
+        <h3 class="mb-3 text-[20px]"><code>locale: string;</code> <span class="text-[16px]">default: <code class="text-teal-200">"fr-fr"</code></span></h3>
+        <h3 class="mb-3 text-[20px]"><code>font-family: string;</code> <span class="text-[16px]">default: <code class="text-teal-200">"inherit"</code></span></h3>
+        <h3 class="mb-3 text-[20px]"><code>max-height: string;</code> <span class="text-[16px]">default: <code class="text-teal-200">"500px"</code>(can be any css value, "calc(100vh - 200px)" will work)</span></h3>
+        <h3 class="mb-3 text-[20px]"><code>rows-per-page: number;</code> <span class="text-[16px]">default: <code class="text-teal-200">25</code></span></h3>
+        <h3 class="mb-3 text-[20px]"><code>use-chart: string;</code> <span class="text-[16px]">default: <code class="text-teal-200">"true"</code></span></h3>
+        <h3 class="mb-3 text-[20px]"><code>translations: Object;</code> 
+          <div class="flex flex-row rounded-md place-items-center place-content-center gap-6 px-6 py-3 bg-slate-800 text-red-200 mb-3"><AlertTriangleIcon/> Requires data to be passed in JSON format</div>
+          <span class="text-[16px]"> default:
+  <pre>
+    <code class="text-teal-200">
+      {
+        average: "Average",
+        by: "by",
+        chooseCategoryColumn: "Choose category column",
+        exportAllButton: "XLSX all",
+        exportAllLabel: "Export all rows of your current filtered dataset",
+        exportPageButton: "XLSX page",
+        exportPageLabel: "Export rows of the current page",
+        from: "From",
+        inputPlaceholder: "Search...",
+        makeDonut: "Generate",
+        nb: "Nb",
+        page: "Page",
+        paginatorLabel: "Rows per page",
+        sizeWarning: "Displaying too many rows at a time can lead to slower performance",
+        sum: "Sum",
+        to: "To",
+        total: 'Total',
+        totalRows: "Total rows",
+      }
+    </code>
+  </pre>
+          </span>
+        </h3>
       </article>
 
       <SectionTitle uid="example">
@@ -434,10 +526,171 @@ const body = computed(() => {
           :header="JSON.stringify(head)"
           :body="JSON.stringify(body)"
         />
-    </div>
-    </div>
-    
+      </div>
+      <div class="mt-12">
+        Props passed for the header in this example:
+        <NiceSection>
+  <pre>
+    const header = JSON.stringify([
+        {
+          name: "touchpoint",
+          type: "text",
+          average: false,
+          decimals: undefined,
+          sum: false,
+          isSort: true,
+          isSearch: true,
+          isMultiselect: true,
+          isPercentage: false,
+          percentageTo: undefined,
+          suffix: "",
+          prefix: "",
+          rangeFilter: false,
+      },
+      {
+          name: "category",
+          type: "text",
+          average: false,
+          decimals: undefined,
+          sum: false,
+          isSort: false,
+          isSearch: false,
+          isMultiselect: true,
+          isPercentage: false,
+          percentageTo: undefined,
+          suffix:"",
+          prefix: "",
+          rangeFilter: false,
+      },
+      {
+          name: "date",
+          type: "date",
+          average: false,
+          decimals: undefined,
+          sum: false,
+          isSort: true,
+          isSearch: false,
+          isMultiselect: false,
+          isPercentage: false,
+          percentageTo: undefined,
+          suffix:"",
+          prefix:"",
+          rangeFilter: false,
+      },
+      {
+          name: "base",
+          type: "numeric",
+          average: true,
+          decimals: 0,
+          sum: true,
+          isSort: true,
+          isSearch: false,
+          isMultiselect: false,
+          isPercentage: false,
+          percentageTo: undefined,
+          suffix:"",
+          prefix:"",
+          rangeFilter: false,
+      },
+      {
+          name: "rating",
+          type: "numeric",
+          decimals: 1,
+          average: true,
+          sum: false,
+          isSort: true,
+          isSearch: false,
+          isMultiselect: false,
+          isPercentage: false,
+          percentageTo: undefined,
+          suffix:"",
+          prefix:"",
+          rangeFilter: true,
+      },
+      {
+          name: "spend",
+          type: "numeric",
+          decimals: 1,
+          average: true,
+          sum: true,
+          isSort: true,
+          isSearch: false,
+          isMultiselect: false,
+          isPercentage: false,
+          percentageTo: undefined,
+          suffix:"€",
+          prefix:"",
+          rangeFilter: true,
+      },
+      {
+          name: "percentage",
+          type: "numeric",
+          decimals: 1,
+          average: false,
+          sum: false,
+          isSort: true,
+          isSearch: false,
+          isMultiselect: false,
+          isPercentage: true, // requires an empty slot in the body td arrays!
+          percentageTo: "base",
+          suffix:"",
+          prefix:"",
+          rangeFilter: false,
+      },
+      {
+          name: "happy",
+          type: "numeric",
+          decimals: 0,
+          average: true,
+          sum: true,
+          isSort: true,
+          isSearch: false,
+          isMultiselect: false,
+          isPercentage: false,
+          percentageTo: "base",
+          suffix:"",
+          prefix:"",
+          rangeFilter: false,
+      },
+      {
+          name: "sad",
+          type: "numeric",
+          decimals: 0,
+          average: true,
+          sum: true,
+          isSort: true,
+          isSearch: false,
+          isMultiselect: false,
+          isPercentage: false,
+          percentageTo: "base",
+          suffix:"",
+          prefix:"",
+          rangeFilter: false
+      },
+    ])
+  </pre>
+        </NiceSection>
 
-    
+        And here is a sample for the 3 rows of the body prop in this example:
+        <NiceSection>
+  <pre>
+      const body = JSON.stringify([
+        {
+          td: ["Cleanliness", "Shop", "21/04/2023", 88, 3.5, 103.6, "", 80, 8]
+        },
+        {
+          td: ["User experience", "Reception", "12/03/2023", 120, 4.3, 103.6, "", 100, 20]
+        },
+        {
+          td: ["Delivery speed", "Post-sale", "17/02/2023", 425, 4.5, 45.4, "", 125, 300]
+        }
+      ])
+  </pre>
+        </NiceSection>
+      </div>
+      <footer class="text-center">
+        Alec Lloyd Probert {{ new Date().getFullYear() }}
+      </footer>
+    </div>
   </div>
 </template>
