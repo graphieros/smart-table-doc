@@ -490,6 +490,7 @@ const body = computed(() => {
         <h3 class="mb-3 text-[20px]"><code>translations: Object;</code> 
           <div class="flex flex-row rounded-md place-items-center place-content-center gap-6 px-6 py-3 bg-slate-800 text-red-200 mb-3"><AlertTriangleIcon/> Requires data to be passed in JSON format</div>
           <span class="text-[16px]"> default:
+            <NiceSection>
   <pre>
     <code class="text-teal-200">
       {
@@ -514,6 +515,7 @@ const body = computed(() => {
       }
     </code>
   </pre>
+            </NiceSection>
           </span>
         </h3>
       </article>
